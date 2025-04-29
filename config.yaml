@@ -1,0 +1,24 @@
+# Configuration for Neural Temporal Manipulation
+
+# Model Parameters
+model_type: transformer
+input_dim: 3
+hidden_dim: 64
+num_heads: 4
+num_layers: 3
+output_dim: 3
+
+# Training Parameters
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
+model_save_path: models/checkpoints/timebender.pt
+
+# Data Generation Parameters
+lorenz:
+  steps: 1000
+  dt: 0.01
+  sigma: 10.0
+  rho: 28.0
+  beta: 2.667
+  seed: 42
